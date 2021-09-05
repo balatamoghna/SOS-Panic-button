@@ -1,0 +1,35 @@
+          <input type="text" nbInput fullWidth status="basic"
+            placeholder="Enter Message..." id="item" name="msg" pInputText status="primary" style="margin-bottom: 5px;"
+            required [(ngModel)]="msg"
+            >
+            
+            <br>
+
+            <input type="text" nbInput fullWidth status="basic"
+            placeholder="Enter Name..." id="item" name="name" pInputText status="primary" style="margin-bottom: 5px;"
+            required [(ngModel)]="name"
+            >
+            <br>
+
+            <input type="text" nbInput fullWidth status="basic"
+            placeholder="Enter Contact..." id="item" name="contact1" pInputText status="primary" style="margin-bottom: 5px;"
+            required [(ngModel)]="num1"
+            >
+            <br>
+
+            <input type="text" nbInput fullWidth status="basic"
+            placeholder="Enter Contact..." id="item" name="contact2" pInputText status="primary" style="margin-bottom: 5px;"
+            required [(ngModel)]="num2"
+            >
+            <br>
+
+           
+
+              
+              <form (ngSubmit)="onPress()">
+                <button type="submit" class="btn btn-success" nbButton size="small" fullWidth style="margin-bottom: 5px;" status="primary">Save Creds</button>
+            </form>
+            <form (ngSubmit)="onPanic()">
+              <button type="submit" class="btn btn-success" nbButton size="small" fullWidth style="margin-bottom: 5px;" status="primary">SOS BUTTON</button>
+              
+          </form>
